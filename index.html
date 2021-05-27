@@ -8,70 +8,103 @@
 
     <title>Google</title>
 </head>
+
+<!-- this is  a special tag -->
+<style>
+    nav {
+         color: red;
+    }
+
+    body {
+      color: orange;
+    }
+
+    p {
+        color: blue;
+    }
+
+    div {
+        background-color: azure;
+    }
+
+    .my-navs {
+        font-size: 1.25rem;
+        background-color: antiquewhite;
+        padding-left: 50px;
+    }
+
+
+</style>
+
 <body>
 
-<!-- nav section -->
-<nav>
-    <p>About</p>
-    <p>Store</p>
-    <p>Gmail</p>
-    <p>Images</p>
-    <img src="https://placeimg.com/25/25/any" alt="Apps">
-    <img src="https://i.pravatar.cc/25" alt="Bio Pic">
-</nav>
-<!--//end -->
+<div id="intro" class="my-navs">
+    <!-- [C]ascading Style Sheet -->
+    <!-- nav section -->
+    <nav>
+        <p>About</p>
+        <p>Store</p>
+        <p>Gmail</p>
+        <p>Images</p>
+        <img src="https://placeimg.com/25/25/any" alt="Apps">
+        <img src="https://i.pravatar.cc/25" alt="Bio Pic">
+    </nav>
+    <!--//end -->
+</div>
 
 
-<!-- main section -->
-<div>
-    <img src="https://placeimg.com/600/250/aruba" alt="Main Google Image">
+    <!-- main section -->
+    <div id="sectional">
+    <!--    <img src="https://placeimg.com/600/250/aruba" alt="Main Google Image">-->
 
-    <br>
-    <br>
+        <!-- search box -->
+        <form action="">
+            <input type="search" id="search-box" placeholder="Enter Your Search Here">
+            <input type="submit" value="Search">
+            <input type="submit" value="I'm Feeling Lucky">
+        </form>
+        <!--//end -->
+        <!-- My booking form -->
+        <form>
+            <label for="destination">
+                Destination
+                <select name="destination" id="destination">
+                    <option value=""></option>
+                    <option value="Maine">Maine</option>
+                    <option value="New York">New York</option>
+                    <option value="Aruba">Aruba</option>
+                </select>
+            </label>
+            <!-- Date Selection -->
+            <label for="booking-from">
+                From:
+                <input type="month" id="booking-from">
+            </label>
+            <br>
+            <label for="booking-to">
+                To:
+                <input type="month" id="booking-to">
+            </label>
 
-    <!-- My booking form -->
-    <form>
-        <label for="destination">
-            Destination
-            <select name="destination" id="destination">
-                <option value=""></option>
-                <option value="Maine">Maine</option>
-                <option value="New York">New York</option>
-                <option value="Aruba">Aruba</option>
-            </select>
-        </label>
+            <label for="special-order">Your Special Order</label> <br>
+            <textarea name="special" id="special-order" cols="30" rows="10"></textarea>
 
-        <br>
-        <!-- Date Selection -->
-        <label for="booking-from">
-            From:
-            <input type="month" id="booking-from">
-        </label>
-        <br>
-        <label for="booking-to">
-            To:
-            <input type="month" id="booking-to">
-        </label>
-
-        <label for="special-order">Your Special Order</label> <br>
-        <textarea name="special" id="special-order" cols="30" rows="10"></textarea>
-
+            <!--//end -->
+            <input type="submit" value="Submit Your Order">
+            <input type="reset">
+        </form>
         <!--//end -->
 
-        <br>
 
-        <input type="submit" value="Submit Your Order">
-        <input type="reset">
-    </form>
+    </div>
+    <!--//end-->
+
+    <div class="my-navs">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A corporis debitis dolorem doloremque eligendi, impedit nostrum sit unde? A aliquam aperiam dolor, expedita facere fuga inventore magni molestias quia repellat!</p>
+    </div>
+
+    <!--footer section -->
     <!--//end -->
-
-
-</div>
-<!--//end-->
-
-
-<!--footer section -->
-<!--//end -->
 
 
 </body>
