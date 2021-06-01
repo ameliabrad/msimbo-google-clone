@@ -5,107 +5,58 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <title>Google</title>
+    <title>GoogleDuckDuckGo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
-<!-- this is  a special tag -->
+<body>
 <style>
-    nav {
-         color: red;
-    }
-
-    body {
-      color: orange;
-    }
-
     p {
-        color: blue;
+        color: darkgray;
+    }
+    h1 {
+        font-size: 1.75rem;
+        color: darkgrey;
+    }
+    /**
+    @TODO: Refactor this section to properly style the "Search button" and "contact" button
+         without conflicting with the style of the main `input` box
+         1. *Secure Search* should be a button similar to Google's
+         2. *Contact Us* should be a link
+     */
+    input {
+        display: block;
+        width: 550px;
+        height: 35px;
+        border-radius: 4px;
     }
 
-    div {
-        background-color: azure;
+    #nav p {
+        /*font-size: 1.1rem;*/
+        /*background-color: red;*/
+        display: inline;
     }
-
-    .my-navs {
-        font-size: 1.25rem;
-        background-color: antiquewhite;
-        padding-left: 50px;
-    }
-
 
 </style>
-
-<body>
-
-<div id="intro" class="my-navs">
-    <!-- [C]ascading Style Sheet -->
-    <!-- nav section -->
-    <nav>
-        <p>About</p>
-        <p>Store</p>
-        <p>Gmail</p>
-        <p>Images</p>
-        <img src="https://placeimg.com/25/25/any" alt="Apps">
-        <img src="https://i.pravatar.cc/25" alt="Bio Pic">
-    </nav>
-    <!--//end -->
+<!-- Header -->
+<div id="nav">
+    <!-- block level -->
+    <!-- inline level -->
+    <p><a href="#">About</a></p>
+    <p><a href="">Store</a></p>
+    <p><a href="">User</a></p>
 </div>
 
+<!-- main section -->
+<div id="main-cta">
+    <h1>GoogleDuckGo</h1>
+    <input type="text" name="search" id="search" placeholder="Search the web without being tracked">
+        <input type="submit" value="Secure Search">
+</div>
 
-    <!-- main section -->
-    <div id="sectional">
-    <!--    <img src="https://placeimg.com/600/250/aruba" alt="Main Google Image">-->
-
-        <!-- search box -->
-        <form action="">
-            <input type="search" id="search-box" placeholder="Enter Your Search Here">
-            <input type="submit" value="Search">
-            <input type="submit" value="I'm Feeling Lucky">
-        </form>
-        <!--//end -->
-        <!-- My booking form -->
-        <form>
-            <label for="destination">
-                Destination
-                <select name="destination" id="destination">
-                    <option value=""></option>
-                    <option value="Maine">Maine</option>
-                    <option value="New York">New York</option>
-                    <option value="Aruba">Aruba</option>
-                </select>
-            </label>
-            <!-- Date Selection -->
-            <label for="booking-from">
-                From:
-                <input type="month" id="booking-from">
-            </label>
-            <br>
-            <label for="booking-to">
-                To:
-                <input type="month" id="booking-to">
-            </label>
-
-            <label for="special-order">Your Special Order</label> <br>
-            <textarea name="special" id="special-order" cols="30" rows="10"></textarea>
-
-            <!--//end -->
-            <input type="submit" value="Submit Your Order">
-            <input type="reset">
-        </form>
-        <!--//end -->
-
-
-    </div>
-    <!--//end-->
-
-    <div class="my-navs">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A corporis debitis dolorem doloremque eligendi, impedit nostrum sit unde? A aliquam aperiam dolor, expedita facere fuga inventore magni molestias quia repellat!</p>
-    </div>
-
-    <!--footer section -->
-    <!--//end -->
-
+<!-- footer -->
+<div id="footer">
+    <input type="submit" value="Contact Us">
+</div>
 
 </body>
 </html>
