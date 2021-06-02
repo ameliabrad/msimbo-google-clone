@@ -5,10 +5,78 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <title>Google</title>
+    <title>GoogleDuckDuckGo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+<style>
+    p {
+        color: darkgray;
+    }
+    h1 {
+        font-size: 1.75rem;
+        color: darkgrey;
+    }
+    /**
+    @TODO: Refactor this section to properly style the "Search button" and "contact" button
+         without conflicting with the style of the main `input` box
+         1. *Secure Search* should be a button similar to Google's
+         2. *Contact Us* should be a link
+     */
+    input {
+        display: block;
+        width: 550px;
+        height: 35px;
+        border-radius: 4px;
+    }
+
+    #nav p {
+        /*font-size: 1.1rem;*/
+        /*background-color: red;*/
+        display: inline;
+    }
+
+    .button {
+        color: #383838;
+        background-color: #F8F8F8;    /* Light Gray */
+        padding: 10px 10px 30px 10px;
+        text-align: center;
+        border: 2px solid #F8F8F8;    /* Light Gray */
+        border-radius: 12px;
+
+        width: 125px;
+        margin: 20px auto;
+    }
+
+
+
+</style>
+<!-- Header -->
+<div id="nav">
+    <!-- block level -->
+    <!-- inline level -->
+    <p><a href="#">About</a></p>
+    <p><a href="">Store</a></p>
+    <p><a href="">User</a></p>
+</div>
+
+<!-- main section -->
+<div id="main-cta">
+    <h1>GoogleDuckGo</h1>
+        <input type="text" name="search" id="search" placeholder="Search the web without being tracked">
+
+        <input class='button' type="submit" value="Secure Search">
+
+</div>
+
+<!-- footer -->
+<div id="footer">
+    <a href="contact-us.html">
+    <input class="button" type="submit" value="Contact Us">
+    </a>
+
+
+</div>
 
 </body>
 </html>
